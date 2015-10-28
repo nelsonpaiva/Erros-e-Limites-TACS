@@ -1,0 +1,12 @@
+boolean erro;
+  do {
+    try {
+      System.out.println("Digite sua idade: ");
+      int idade = sc.nextInt();
+      erro = false;
+    } catch (Exception e){
+      System.out.println("Você informou a idade errada!");
+      erro = true;
+      sc.nextLine();
+    }
+  } while (erro);
